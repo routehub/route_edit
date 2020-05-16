@@ -1,0 +1,72 @@
+<ion-header></ion-header>
+<ion-content padding>
+  <div class="main-content">
+
+    <div class="text-content">
+      <h1 contenteditable="true" [change]="onChangeName(e)">チタイチ（ごんぎつね起点）</h1>
+    </div>
+
+    <div class="text-content">
+      <p class="author-area">
+        <ion-icon name="person-circle-outline"></ion-icon>
+        <span class="author">じゅーぞー</span>
+        <span class="date">created 2011/5/18</span>
+      </p>
+      <div class="fav-area">
+        <ion-icon name="heart-outline" color="primary"></ion-icon>
+        <ion-label color="primary">128</ion-label>
+      </div>
+    </div>
+
+
+    <div class="map" id="map">map</div>
+
+    <div class="text-content">
+      <div class="elevation">elevation</div>
+    </div>
+
+    <div class="text-content elevation-info-area">
+      <div>
+        <span>総距離</span>
+        69.1km
+      </div>
+
+      <div>
+        <span>獲得標高</span>
+        59m
+      </div>
+
+      <div>
+        <span>最大標高差</span>
+        59m
+      </div>
+
+      <div class="startgoal">
+        <p><span>スタート : </span><span class="target">愛知県名古屋市名東区藤が丘</span></p>
+        <p><span>ゴール : </span><span class="target">豊田市井上町5丁目</span></p>
+      </div>
+
+    </div>
+
+    <div class="text-content report-area">
+      <h2>レポート</h2>
+      <p contenteditable="true" [change]="onChangeBody(e)">
+        なお、 row および row-reverse の値は、フレックスコンテナーの書字方向に影響されます。<br>
+        dir 属性が ltr である場合は、 row は左から右へ向かう水平軸を表し、<br>
+        また row-reverseは右から左へ向かう水平軸を表します。一方、 dir 属性が rtl である場合は、 row は右から左へ向かう水平軸を表し、また row-reverse は左から右へ向かう水平軸を表します。
+      </p>
+
+    </div>
+
+
+
+    <footer>
+      routehub.app © 2020&nbsp;&nbsp;
+      <a target="_blank" href="https://routehub.github.io/route_web/terms.html">利用規約</a>&nbsp;&nbsp;
+      <a target="_blank" href="https://routehub.github.io/route_web/privacypolicy.html">プライバシーポリシー</a>&nbsp;&nbsp;
+      <!--<a href="https://forms.gle/BLxuJbPC56DrvuhQ6" target="_blank">お問い合わせ</a>-->
+    </footer>
+
+
+  </div>
+</ion-content>
