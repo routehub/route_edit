@@ -18,8 +18,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // this is needed!
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { RouteinfoPageModule } from './routeinfo/routeinfo.module';
-import { ExportPageModule } from './export/export.module';
 
 import { environment } from '../environments/environment';
 import { LayerselectPageModule } from './layerselect/layerselect.module';
@@ -46,9 +44,6 @@ export class IonicGestureConfig extends HammerGestureConfig {
     BrowserAnimationsModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    RouteinfoPageModule,
-    ExportPageModule,
-    LayerselectPageModule,
     LazyLoadImageModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
