@@ -21,13 +21,14 @@ ion-icon {
   vertical-align: middle;
 }
 
+
 .main-content {
   background: white;
   max-width: 1200px;
   min-width: 800px;
   display: flow-root;
   position: relative;
-  height: 100%;
+  //height: 100%;
   margin: 0 auto;
   box-shadow: 0px 0px 5px 5px #dedede;
 }
@@ -43,7 +44,10 @@ ion-icon {
 
 footer {
   margin-top:80px;
+  margin-bottom:50px;
   text-align: center;
   width: 100%;
-  font-size:90%
+  font-size:90%;
+  clear:both;
 }
+

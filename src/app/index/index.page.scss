@@ -70,11 +70,16 @@ h1 {
         text-align: left;
         padding: 0;
 
+
         p {
             margin : 0
         }
         .target {
             color:black;
+        }
+        .label {
+            display: inline-block;
+            width: 85px;
         }
     }
 }
