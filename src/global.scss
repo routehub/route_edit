@@ -11,7 +11,7 @@
 @import '~@ionic/angular/css/flex-utils.css';
 
 ion-content{
-  --ion-background-color:rgb(224, 224, 224);
+  /*--ion-background-color:rgb(224, 224, 224);*/
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -37,8 +37,60 @@ ion-icon {
   margin: 0 auto;
 }
 
-.map {
+.map-content {
+  max-width: 1000px;
+  margin: 0 auto;
   background-color : skyblue;
+}
+
+.map {
+  height:400px;
+  background-color : skyblue;
+}
+
+.elevation {
+  background: tan;
+  height:120px;
+}
+
+.comment-area {
+  width: 800px;
+  margin: 0 auto;
+  height: 250px;
+  border: solid grey 1px;
+  border-radius: 10px;
+  display: flex;
+
+  .comment-list, .comment-detail {
+    width : 50%;
+    height: 100%;
+  }
+  .comment-list {
+    position: relative;
+    border-right: solid grey 1px;
+
+    .comment-start, .comment-goal {
+      display: inline-block;
+      width: 100%;
+      height: 1.5em;;
+    }
+    .comment-start {
+      border-bottom:  solid grey 1px;
+    }
+    .comment-goal {
+      position: absolute;
+      bottom: 0;
+      border-top:  solid grey 1px;
+    }
+
+    ul {
+      display: block;
+      width: 100%;
+      height: 130px;
+      overflow-y: scroll;
+    }
+
+  }
 }
 
 
