@@ -10,99 +10,96 @@
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
 
+ion-content{
+  /*--ion-background-color:rgb(224, 224, 224);*/
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+ion-icon {
+  vertical-align: middle;
+}
 
-.search-settingmenu {
-  .popover-wrapper {
-    display: flex;
-    width: 100%;
-/*    height: 100%; クリックイベント拾わなくなるので */
-    justify-content: center;
+
+.main-content {
+  background: white;
+  max-width: 1200px;
+  min-width: 800px;
+  display: flow-root;
+  position: relative;
+  //height: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 5px 5px #dedede;
+}
+.text-content {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.map-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color : skyblue;
+}
+
+.map {
+  height:400px;
+  background-color : skyblue;
+}
+
+.elevation {
+  background: tan;
+  height:120px;
+}
+
+.comment-area {
+  width: 800px;
+  margin: 0 auto;
+  height: 250px;
+  border: solid grey 1px;
+  border-radius: 10px;
+  display: flex;
+
+  .comment-list, .comment-detail {
+    width : 50%;
+    height: 100%;
   }
+  .comment-list {
+    position: relative;
+    border-right: solid grey 1px;
 
-  .popover-content {
-    width: calc(100% - 24px);
-    top: 120px !important;
+    .comment-start, .comment-goal {
+      display: inline-block;
+      width: 100%;
+      height: 1.5em;;
+    }
+    .comment-start {
+      border-bottom:  solid grey 1px;
+    }
+    .comment-goal {
+      position: absolute;
+      bottom: 0;
+      border-top:  solid grey 1px;
+    }
+
+    ul {
+      display: block;
+      width: 100%;
+      height: 130px;
+      overflow-y: scroll;
+    }
+
   }
-
-  .popover-arrow {
-    position: absolute;
-    top: 90px;
-    height: 20px;
-    z-index: 9999;
-    border: 15px solid transparent;
-    border-bottom: 15px solid #ffffff;
-  }
-  
-}
-
-.route-info hr {
-  background : #c5c5c5 !important;
-}
-
-.map-editIcon {
-  // animation: chikachika 0.5s;
-  // animation-iteration-count: infinite;
-  cursor: pointer;
-}
-
-@keyframes chikachika {
-  0% {
-    opacity:0;
-  }
-  50% {
-    opacity:1;
-  }
-  100% {
-    opacity:0;
-  }
-}
-
-.login-button {
-  font-size:0.9em;
-  color:white;
-  border: solid #ff82ac 1px;
-  border-radius: 4px;
-}
-.login-button-mobile {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  border : none;
-  display: none; /* homeで書き換え */
-}
-.login-button img {
-    width: 30px;
-    height: 30px;
-}
-
-.ion-avatar  {     
-  margin: auto;
-  width:100% !important;  
-  height:100% !important;  
-  max-width: 150px !important;  //any size
-  max-height: 150px !important; //any size 
-  }
-
-.leaflet-tile {
-  image-rendering: pixelated;
-  filter: saturate(160%);
-}
-.leaflet-control-layers-toggle {
-  display:none;
-}
-div.leaflet-bottom.leaflet-right {
-    background: #ffffff4d;
-}
-.wrapper-helper {
-  max-width:900px;
-  margin:auto;
 }
 
 
 footer {
-  max-width:900px;
-  margin:auto;
-  margin-top: 100px;
-  font-size:0.8em;
+  margin-top:80px;
+  margin-bottom:50px;
   text-align: center;
+  width: 100%;
+  font-size:90%;
+  clear:both;
 }
+
